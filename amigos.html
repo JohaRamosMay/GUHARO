@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>¡Desafío!</title>
+  <link rel="icon" href="assets/Logo Guharo PNG RESIZE.png" type="image/x-icon">
+  <link rel="stylesheet" href="assets/styles.css">
+  <!-- SweetAlert CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" integrity="sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="container">
+    <div class="console">
+      <img id="logo" src="assets/Logo Guharo PNG RESIZE.png" alt="Logo">
+      <h1>¡Adivinanza!</h1>
+
+      <div id="question-section">
+        <p>En un mundo lejano hay 100 prisioneros numerados del 1 al 100. Todos están alineados en fila, de modo que el prisionero 1 puede ver a todos los demás, el prisionero 2 puede ver a todos menos al 1, el prisionero 3 puede ver a todos menos a los prisioneros 1 y 2, y así sucesivamente. Cada prisionero lleva puesto un sombrero, que puede ser rojo o azul, y solo pueden ver los sombreros de los demás, no el suyo.</p>
+
+        <p>El guardia comenzará con el prisionero 1 y le pedirá que adivine de qué color es su propio sombrero. Si acierta, queda libre; si falla, será ejecutado. El prisionero 1 puede escuchar las respuestas de los demás, pero debe adivinar sin ayuda directa. ¿Qué estrategia deben seguir los prisioneros para minimizar las ejecuciones?</p>
+        
+        <button onclick="checkAnswer('a')">a. Todos los prisioneros dicen el color del sombrero del prisionero delante de ellos.</button>
+        <button onclick="checkAnswer('b')">b. El prisionero 1 elige rojo si ve un número par de sombreros azules y azul si ve un número impar.</button>
+        <button onclick="checkAnswer('c')">c. Todos dicen el color contrario del que ven, esperando que la mitad sobreviva.</button>
+      </div>
+      
+      <div id="feedback"></div>
+      
+    </div>
+  </div>
+  <script src="assets/script2.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
+</body>
+
+</html>
